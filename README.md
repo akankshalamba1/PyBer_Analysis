@@ -24,6 +24,17 @@ Python scripts using Pandas libraries, the Jupyter Notebook, and Matplotlib to c
 **Coding language used** 
 Python was the main coding language, we used SciPy, a statistical Python package, and NumPy, a fundamental package for scientific computing in Python functions.
 
+### Steps involved in the Analysis:
+For this analysis we are using two csv files, so we followed following steps to make the computing logical and systematic:
+- **Merge both csv file data**
+
+> pyber_data_df = pd.merge(ride_data_df, city_data_df, how="left", on=["city", "city"])
+
+- **Calculating total ride and total drivers**
+
+- **Calculating average fare per city type**
+- **Calculated average fare per driver**
+- **Data summary**
 ## Results
 
 ## Summary
