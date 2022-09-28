@@ -8,11 +8,11 @@ Analysis of PyBer, a ride-sharing app company valued at $2.3 billion. We were as
 For this project two CSV files were used that had ride data and city data. 
 - **Ride Data file:** The ride data CSV file includes 2376 rows and 4 columns, namely:- City, Date, Fare, ride_id. The first 10 rows of this csv file is as follows:
 
-[Ride Data](/Resources/ride_data.csv)
-
 ![ride_data_df](https://user-images.githubusercontent.com/111251560/192709610-b64fcdb0-2e8d-48c7-8b69-d0d988ee2821.png)
 
--**City Data file:** The city data CSV file inclused 121 rows and 3 columns, namely:- City, Driver_count and type. the first 10 rows of this csv file is as follows:
+[Ride Data](/Resources/ride_data.csv)
+
+- **City Data file:** The city data CSV file inclused 121 rows and 3 columns, namely:- City, Driver_count and type. the first 10 rows of this csv file is as follows:
 
 ![city_data_df](https://user-images.githubusercontent.com/111251560/192710289-c5414575-76cc-4ce3-bde8-4eedc1207ae6.png)
 
