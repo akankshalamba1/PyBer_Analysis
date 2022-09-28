@@ -21,10 +21,9 @@ For this project two CSV files were used that had ride data and city data.
 **Technology used** 
 Python scripts using Pandas libraries, the Jupyter Notebook, and Matplotlib to create a variety of charts that showcase the relationship between the type of city and the number of drivers and riders, as well as the percentage of total fares, riders, and drivers by type of city.
 
-
 **Coding language used** 
 Python was the main coding language
 
 ## Results
 
-##Summary
+## Summary
