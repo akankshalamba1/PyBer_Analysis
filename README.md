@@ -10,7 +10,7 @@ For this project two CSV files were used that had ride data and city data.
 
 ![ride_data_df](https://user-images.githubusercontent.com/111251560/192709610-b64fcdb0-2e8d-48c7-8b69-d0d988ee2821.png)
 
-[Ride Data](/Resources/ride_data.csv)
+[ride_data](/Resources/ride_data.csv)
 
 - **City Data file:** The city data CSV file inclused 121 rows and 3 columns, namely:- City, Driver_count and type. the first 10 rows of this csv file is as follows:
 
