@@ -3,13 +3,19 @@ Analysis of PyBer, a ride-sharing app company valued at $2.3 billion. We were as
 
 
 ## Overview of the analysis
-** Resources used**
+**Resources used**
+For this project two CSV files were used that had rider data and driver data as attached below:
 
-** Technology used** 
+[Ride Data](/Resources/ride_data.csv)
+
+[city_data](/Resources/city_data.csv)
+
+**Technology used** 
 Python scripts using Pandas libraries, the Jupyter Notebook, and Matplotlib to create a variety of charts that showcase the relationship between the type of city and the number of drivers and riders, as well as the percentage of total fares, riders, and drivers by type of city.
 
 
-** Coding language used** Python was the main coding language
+**Coding language used** 
+Python was the main coding language
 
 ## Results
 
