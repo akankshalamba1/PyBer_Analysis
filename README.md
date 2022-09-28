@@ -25,16 +25,43 @@ Python scripts using Pandas libraries, the Jupyter Notebook, and Matplotlib to c
 Python was the main coding language, we used SciPy, a statistical Python package, and NumPy, a fundamental package for scientific computing in Python functions.
 
 ### Steps involved in the Analysis:
-For this analysis we are using two csv files, so we followed following steps to make the computing logical and systematic:
-- **Merge both csv file data**
-
+For this analysis we are using two csv files, so we used following steps to make the computing logical and systematic:
+- **Merge both csv file data** As the data is devided in two csv files first thing we did to make analysis easy is combine both the file data into one data frame called "pyber_data_df" by using "city" as the index. To combine the data we used following code:
 > pyber_data_df = pd.merge(ride_data_df, city_data_df, how="left", on=["city", "city"])
 
+**Output**
+
+![merge_data](https://user-images.githubusercontent.com/111251560/192822373-a7be02a2-0a2f-46f4-945f-84e735c794ff.png)
+
 - **Calculating total ride and total drivers**
+> total_rides = pyber_data_df.groupby(["type"]).count()["ride_id"]
+> total_drivers = city_data_df.groupby(["type"]).sum()["driver_count"]
 
 - **Calculating average fare per city type**
+> average_fare_per_ride = total_fare / total_rides
+
 - **Calculated average fare per driver**
+> average_fare_per_driver = total_fare / total_drivers
+
 - **Data summary**
+> pyber_summary_df = pd.DataFrame({
+                                "Total Rides" : total_rides,
+                                "Total Drivers" : total_drivers,
+                                "Total Fare" : total_fare,
+                                "Average Fare per Ride" : average_fare_per_ride,
+                                "Average Fare per Driver" : average_fare_per_driver
+                                })
+
+- **Summary Formatting**
+> pyber_summary_df["Total Rides"] = pyber_summary_df["Total Rides"].map("{:,.0f}".format)
+
+pyber_summary_df["Total Drivers"] = pyber_summary_df["Total Drivers"].map("{:,.0f}".format)
+
+pyber_summary_df["Total Fare"] = pyber_summary_df["Total Fare"].map("${:,.2f}".format)
+
+pyber_summary_df["Average Fare per Ride"] = pyber_summary_df["Average Fare per Ride"].map("${:,.2f}".format)
+
+pyber_summary_df["Average Fare per Driver"] = pyber_summary_df["Average Fare per Driver"].map("${:,.2f}".format)
 ## Results
 
 ## Summary
