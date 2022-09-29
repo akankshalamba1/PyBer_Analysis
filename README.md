@@ -86,3 +86,13 @@ Following code is used to format the output of summary dataframe:
 
 
 ## Summary
+
+From the above analysis we could summarize that in Urban cities the number of drivers is way more that the demand that is the number of rides. So the fare generated from these rides is bare minimun. After this analysis we have come up with come recommendations for the PerBer ride share company that could help the company to be profitable and reach the demand and supply equilibrium. 
+
+### Recommendations for PyBer:
+
+- Systematic distribution of service in all the city types: We need to deep dive in the factors affecting ride choices in all three city types and provide special offers to drivers to shift from Urban area to rural and suburban area as  in Urban rae we are having excessive supply as compared to the demand for service where as in rural area its the opposite. 
+
+- Provide special offers for customers in rural areas to adapt to ride share service: Based on the Analysis it is observed that in rural area the supply of drivers is very less as compare to urban areas as a result the Total fare generated in rural area is drastically ow as compared to urban and suburban areas. Detail market research is required to understand the mindset, choices and spending habits of customers in rural area. We also need to consider coupons and special incentives to customers in rural areas to motivate them to adopt PyBer ride sharing. As the Average Fare per ride is highest in rural areas.
+
+- Review the company structure and hiring process: Based on the analysis it is highly recommended that we need to review the headcount of drivers. as we are having about 1.5 times the drivers as compared to the rides in the urban area which is a huge financial pressure at PyBer. We need to re-struct the headcounts, could consider moving around employees, evaluating there performance and recognizing the key performers.
