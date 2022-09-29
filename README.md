@@ -34,7 +34,13 @@ For this analysis we are using two csv files, so we used following steps to make
 ![merge_data](https://user-images.githubusercontent.com/111251560/192822373-a7be02a2-0a2f-46f4-945f-84e735c794ff.png)
 
 - **Calculating total ride and total drivers**
+
+Following is the code used to find the total rides in each city type
+
 > total_rides = pyber_data_df.groupby(["type"]).count()["ride_id"]
+
+Following code is used to find the total number of drivers in each city type
+
 > total_drivers = city_data_df.groupby(["type"]).sum()["driver_count"]
 
 - **Calculating average fare per city type**
@@ -45,14 +51,16 @@ For this analysis we are using two csv files, so we used following steps to make
 
 - **Data summary**
 > pyber_summary_df = pd.DataFrame({
-                                "Total Rides" : total_rides,
-                                "Total Drivers" : total_drivers,
-                                "Total Fare" : total_fare,
-                                "Average Fare per Ride" : average_fare_per_ride,
-                                "Average Fare per Driver" : average_fare_per_driver
-                                })
+>                                "Total Rides" : total_rides,
+>                                "Total Drivers" : total_drivers,
+>                                "Total Fare" : total_fare,
+>                                "Average Fare per Ride" : average_fare_per_ride,
+>                                "Average Fare per Driver" : average_fare_per_driver
+>                                })
 
 - **Summary Formatting**
+Following code is used to format the output of summary dataframe:
+
 > pyber_summary_df["Total Rides"] = pyber_summary_df["Total Rides"].map("{:,.0f}".format)
 
 > pyber_summary_df["Total Drivers"] = pyber_summary_df["Total Drivers"].map("{:,.0f}".format)
@@ -63,6 +71,18 @@ For this analysis we are using two csv files, so we used following steps to make
 
 > pyber_summary_df["Average Fare per Driver"] = pyber_summary_df["Average Fare per Driver"].map("${:,.2f}".format)
 
-## Results
+# Results
+
+![summary_output](https://user-images.githubusercontent.com/111251560/192925316-73a6e9b6-5004-49cd-9f7e-ab20021d584e.png)
+
+- Total number of rides are most in Urban area with (1625 rides per week).
+- Highest number of drivers are available in urban area as compared to rural and subrural area with 2405, 78 and 490 drivers respectively.
+- By reviewing the average fare per ride, it could be conclued that the rides in rural area are more profitable as compared to suburban and urban area with $34.62, $30.97 and 24.53 average fare respectively.
+- The data of Average Fare per Driver also depict quite the same story, in rural area the average fare per driver is more that 3 times the average fare in urban area.
+- The results refect the tolal fare in urban area is more that 9 times the fare in rural area and twice the fare in suburban area. 
+
+
+
+
 
 ## Summary
