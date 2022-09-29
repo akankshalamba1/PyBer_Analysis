@@ -72,8 +72,17 @@ Following code is used to format the output of summary dataframe:
 > pyber_summary_df["Average Fare per Driver"] = pyber_summary_df["Average Fare per Driver"].map("${:,.2f}".format)
 
 # Results
-Based on our Analysis it is apparent that the most number of rides are in Urban city type as well as the most number of drivers are also in the urban area. 
+
 ![summary_output](https://user-images.githubusercontent.com/111251560/192925316-73a6e9b6-5004-49cd-9f7e-ab20021d584e.png)
+
+- Total number of rides are most in Urban area with (1625 rides per week).
+- Highest number of drivers are available in urban area as compared to rural and subrural area with 2405, 78 and 490 drivers respectively.
+- By reviewing the average fare per ride, it could be conclued that the rides in rural area are more profitable as compared to suburban and urban area with $34.62, $30.97 and 24.53 average fare respectively.
+- The data of Average Fare per Driver also depict quite the same story, in rural area the average fare per driver is more that 3 times the average fare in urban area.
+- The results refect the tolal fare in urban area is more that 9 times the fare in rural area and twice the fare in suburban area. 
+-  
+
+
 
 
 ## Summary
