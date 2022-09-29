@@ -80,7 +80,8 @@ Following code is used to format the output of summary dataframe:
 - By reviewing the average fare per ride, it could be conclued that the rides in rural area are more profitable as compared to suburban and urban area with $34.62, $30.97 and 24.53 average fare respectively.
 - The data of Average Fare per Driver also depict quite the same story, in rural area the average fare per driver is more that 3 times the average fare in urban area.
 - The results refect the tolal fare in urban area is more that 9 times the fare in rural area and twice the fare in suburban area. 
--  
+
+![Test_image](/Resources/PyBer_fare_summary.png)
 
 
 
