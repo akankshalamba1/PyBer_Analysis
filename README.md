@@ -72,6 +72,9 @@ Following code is used to format the output of summary dataframe:
 > pyber_summary_df["Average Fare per Driver"] = pyber_summary_df["Average Fare per Driver"].map("${:,.2f}".format)
 
 ## Results
+The analysis results are depicted in the jupyter notebook attached below:
+
+[PyBer_Challenge](/PyBer_Challenge.ipynb)
 
 ![summary_output](https://user-images.githubusercontent.com/111251560/192925316-73a6e9b6-5004-49cd-9f7e-ab20021d584e.png)
 
