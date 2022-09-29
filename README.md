@@ -71,7 +71,7 @@ Following code is used to format the output of summary dataframe:
 
 > pyber_summary_df["Average Fare per Driver"] = pyber_summary_df["Average Fare per Driver"].map("${:,.2f}".format)
 
-# Results
+## Results
 
 ![summary_output](https://user-images.githubusercontent.com/111251560/192925316-73a6e9b6-5004-49cd-9f7e-ab20021d584e.png)
 
@@ -83,7 +83,10 @@ Following code is used to format the output of summary dataframe:
 
 ![Test_image](/analysis/PyBer_fare_summary.png)
 
-
+### Observations from line chart
+- The Average weekly fare of rural area lies in $0 to $500 range
+- Average weekly fare of suburban area lies in $500 to $1200 range
+- Average weekly fare of suburban area lies in $1500 to $2500 range
 
 ## Summary
 
