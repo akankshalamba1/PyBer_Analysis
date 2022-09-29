@@ -59,6 +59,8 @@ Following code is used to find the total number of drivers in each city type
 >                                })
 
 - **Summary Formatting**
+Following code is used to format the output of summary dataframe:
+
 > pyber_summary_df["Total Rides"] = pyber_summary_df["Total Rides"].map("{:,.0f}".format)
 
 > pyber_summary_df["Total Drivers"] = pyber_summary_df["Total Drivers"].map("{:,.0f}".format)
@@ -69,6 +71,9 @@ Following code is used to find the total number of drivers in each city type
 
 > pyber_summary_df["Average Fare per Driver"] = pyber_summary_df["Average Fare per Driver"].map("${:,.2f}".format)
 
-## Results
+# Results
+Based on our Analysis it is apparent that the most number of rides are in Urban city type as well as the most number of drivers are also in the urban area. 
+![summary_output](https://user-images.githubusercontent.com/111251560/192925316-73a6e9b6-5004-49cd-9f7e-ab20021d584e.png)
+
 
 ## Summary
