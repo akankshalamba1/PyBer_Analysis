@@ -44,12 +44,21 @@ Following code is used to find the total number of drivers in each city type
 > total_drivers = city_data_df.groupby(["type"]).sum()["driver_count"]
 
 - **Calculating average fare per city type**
+
+The average fare per ride is calculated by dividing Total fare by Total rides. The code is attached as follows:
+
 > average_fare_per_ride = total_fare / total_rides
 
 - **Calculated average fare per driver**
+
+The average fare per driver is calculated by dividing Total fare by Total Drivers. The code is attached as follows:
+
 > average_fare_per_driver = total_fare / total_drivers
 
 - **Data summary**
+
+To summarize that data and to make the conclusion easier we created a dataframe with Total rides, total drivers, total fare and average fare per ride and average fare per driver. We used following code to do so:
+
 > pyber_summary_df = pd.DataFrame({
 >                                "Total Rides" : total_rides,
 >                                "Total Drivers" : total_drivers,
@@ -59,7 +68,8 @@ Following code is used to find the total number of drivers in each city type
 >                                })
 
 - **Summary Formatting**
-Following code is used to format the output of summary dataframe:
+
+To make the data more presentable we made some chages to the output by formating it using the following formula:
 
 > pyber_summary_df["Total Rides"] = pyber_summary_df["Total Rides"].map("{:,.0f}".format)
 
@@ -70,6 +80,7 @@ Following code is used to format the output of summary dataframe:
 > pyber_summary_df["Average Fare per Ride"] = pyber_summary_df["Average Fare per Ride"].map("${:,.2f}".format)
 
 > pyber_summary_df["Average Fare per Driver"] = pyber_summary_df["Average Fare per Driver"].map("${:,.2f}".format)
+
 
 ## Results
 The analysis results are depicted in the jupyter notebook attached below:
@@ -83,6 +94,9 @@ The analysis results are depicted in the jupyter notebook attached below:
 - By reviewing the average fare per ride, it could be conclued that the rides in rural area are more profitable as compared to suburban and urban area with $34.62, $30.97 and 24.53 average fare respectively.
 - The data of Average Fare per Driver also depict quite the same story, in rural area the average fare per driver is more that 3 times the average fare in urban area.
 - The results refect the tolal fare in urban area is more that 9 times the fare in rural area and twice the fare in suburban area. 
+- To make the data understandable and to provide visual presentation to the analysis we converted the data frame by resampling and converting the date into a datetime data type the new data frame appeared as the following:
+
+![timedate](https://user-images.githubusercontent.com/111251560/192934770-c9eaae18-e9c2-4e05-97f3-c8a0eaa06d88.png)
 
 ![Test_image](/analysis/PyBer_fare_summary.png)
 
