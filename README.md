@@ -34,7 +34,13 @@ For this analysis we are using two csv files, so we used following steps to make
 ![merge_data](https://user-images.githubusercontent.com/111251560/192822373-a7be02a2-0a2f-46f4-945f-84e735c794ff.png)
 
 - **Calculating total ride and total drivers**
+
+Following is the code used to find the total rides in each city type
+
 > total_rides = pyber_data_df.groupby(["type"]).count()["ride_id"]
+
+Following code is used to find the total number of drivers in each city type
+
 > total_drivers = city_data_df.groupby(["type"]).sum()["driver_count"]
 
 - **Calculating average fare per city type**
@@ -45,12 +51,12 @@ For this analysis we are using two csv files, so we used following steps to make
 
 - **Data summary**
 > pyber_summary_df = pd.DataFrame({
-                                "Total Rides" : total_rides,
-                                "Total Drivers" : total_drivers,
-                                "Total Fare" : total_fare,
-                                "Average Fare per Ride" : average_fare_per_ride,
-                                "Average Fare per Driver" : average_fare_per_driver
-                                })
+>                                "Total Rides" : total_rides,
+>                                "Total Drivers" : total_drivers,
+>                                "Total Fare" : total_fare,
+>                                "Average Fare per Ride" : average_fare_per_ride,
+>                                "Average Fare per Driver" : average_fare_per_driver
+>                                })
 
 - **Summary Formatting**
 > pyber_summary_df["Total Rides"] = pyber_summary_df["Total Rides"].map("{:,.0f}".format)
