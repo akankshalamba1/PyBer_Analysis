@@ -81,7 +81,7 @@ Following code is used to format the output of summary dataframe:
 - The data of Average Fare per Driver also depict quite the same story, in rural area the average fare per driver is more that 3 times the average fare in urban area.
 - The results refect the tolal fare in urban area is more that 9 times the fare in rural area and twice the fare in suburban area. 
 
-
+![Test_image](/analysis/PyBer_fare_summary.png)
 
 
 
